@@ -7,31 +7,27 @@
     android:background="@color/musturd2"
     tools:context=".Home">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/logo2"></ImageView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/radist"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:text="Select a Service"
-        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
         android:id="@+id/text"></TextView>
 
 
-
-        <ListView
-            android:id="@+id/list1"
-            android:layout_below="@+id/text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"></ListView>
+    <GridView
+        android:id="@+id/grid1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:numColumns="3"></GridView>
 
 
 </RelativeLayout>
