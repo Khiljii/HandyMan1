@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HandyMan">
         <activity
+            android:name=".Bill"
+            android:exported="false" />
+        <activity
+            android:name=".jazzcash"
+            android:exported="false" />
+        <activity
+            android:name=".paymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".Packages"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

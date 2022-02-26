@@ -9,6 +9,7 @@
     <color name="musturd">#ffc90e</color>
     <color name="musturdlite">#ffe380</color>
     <color name="musturd2">#ffeba3</color>
+    <color name="gray">#f8f6f7</color>
     <color name="radist">#e45916</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

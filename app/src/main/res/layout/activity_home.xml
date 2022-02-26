@@ -4,19 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/musturd2"
+    android:background="@color/white"
     tools:context=".Home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/seach1"
+        android:background="@color/musturd">
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            android:id="@+id/seach"></SearchView>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_below="@+id/seach1"
+        android:id="@+id/yes">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="16dp">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/slide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/radist"
+        android:layout_below="@+id/yes"
         android:textSize="30sp"
         android:textStyle="bold"
         android:text="Select a Service"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/text"></TextView>
 
 
@@ -27,6 +66,7 @@
         android:layout_below="@+id/text"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
+        android:verticalSpacing="7dp"
         android:numColumns="3"></GridView>
 
 
