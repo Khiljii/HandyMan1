@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paymentMethod">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"
+        ></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:text="Duration :"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration"
+            android:text="00"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/linear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount :"
+            android:id="@+id/text2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount"
+            android:text="00"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            ></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/text3"
+        android:text="Payment Means :"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/text3"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jazzcash"
+                android:text="JazzCash"
+                android:layout_marginLeft="100dp"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/easypaisa"
+                android:text="EasyPaisa"
+                android:layout_marginLeft="100dp"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bank"
+                android:text="Cash on Service"
+                android:layout_marginLeft="100dp"></RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="Next"></Button>
+
+</RelativeLayout>
