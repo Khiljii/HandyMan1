@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/silvergray"
     tools:context=".Home">
 
 
@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:id="@+id/seach1"
-            android:background="@color/musturd">
+            android:background="@color/silvergray">
 
             <SearchView
                 android:id="@+id/seach"

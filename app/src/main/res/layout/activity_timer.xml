@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/timecard"
         android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
         android:layout_marginLeft="20dp"
         android:foregroundGravity="center_horizontal"
         android:layout_centerHorizontal="true"
