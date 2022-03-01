@@ -27,55 +27,55 @@ TextView t1,t2,t3,t4,t5,t6;
         r1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         r2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         r3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         t5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
         t6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Packages.this,paymentMethod.class));
+                startActivity(new Intent(Packages.this,Timer.class));
             }
         });
     }

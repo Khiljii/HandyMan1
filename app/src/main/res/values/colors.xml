@@ -10,6 +10,12 @@
     <color name="musturdlite">#ffe380</color>
     <color name="musturd2">#ffeba3</color>
     <color name="gray">#f8f6f7</color>
+    <color name="silvergray">#99b3c0</color>
+    <color name="blue">#272b50</color>
     <color name="radist">#e45916</color>
+    <color name="red">#ac0000</color>
+    <color name="bluelite">#2cade2</color>
+    <color name="bluelite2">#7fd4f6</color>
+    <color name="blue2">#0085eb</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

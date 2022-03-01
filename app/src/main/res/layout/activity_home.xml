@@ -6,68 +6,84 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Home">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:id="@+id/seach1"
-        android:background="@color/musturd">
-        <SearchView
+
+
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_height="70dp"
+            android:id="@+id/seach1"
+            android:background="@color/musturd">
 
-            android:id="@+id/seach"></SearchView>
-    </RelativeLayout>
-
+            <SearchView
+                android:id="@+id/seach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/round"
+                android:padding="2dp"></SearchView>
+        </RelativeLayout>
 
 
 
     <RelativeLayout
+        android:id="@+id/whole"
         android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_below="@+id/seach1"
-        android:id="@+id/yes">
-        <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seach1">
+
+
+            <RelativeLayout
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="6dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/slide"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Select a Service"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+
+        <GridView
+            android:id="@+id/grid1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardCornerRadius="6dp"
-            android:layout_margin="16dp">
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/slide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:numColumns="3"
+            android:verticalSpacing="7dp"></GridView>
 
-        </androidx.cardview.widget.CardView>
+
 
     </RelativeLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/radist"
-        android:layout_below="@+id/yes"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="Select a Service"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/text"></TextView>
-
-
-    <GridView
-        android:id="@+id/grid1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/text"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="8dp"
-        android:verticalSpacing="7dp"
-        android:numColumns="3"></GridView>
 
 
 </RelativeLayout>
